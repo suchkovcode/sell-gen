@@ -58,9 +58,9 @@ exports.pub =
    $.task.pub.styles,
    $.task.pub.transfer.admin,
    $.task.pub.sitemap);
-   
-// $.task.pub.server
+
    
 exports.zip = $.task.pub.zip;
+exports.server = $.task.pub.server;
 
 // Для WP стилили не должны менять название
