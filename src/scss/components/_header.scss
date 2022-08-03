@@ -1,3 +1,5 @@
+/* purgecss start ignore */
+
 .header {
    position: absolute;
    display: flex;
@@ -5,6 +7,7 @@
    align-items: center;
    width: 100%;
    padding: 20px;
+   
    @media (min-width: 992px) {
       position: fixed;
       padding: 20px 40px;
@@ -155,3 +158,4 @@
       }
    }
 }
+/* purgecss end ignore */

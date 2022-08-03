@@ -19,8 +19,8 @@ const styles = () => {
          title: "Error running something"
       }))
       .pipe($.app.purgecss({
-         content: ['./public/*.html', './public/js/**/.js'],
-         // fontFace: true,
+         content: ['./public/*.html', './public/js/script.js'],
+         fontFace: false,
          keyframes: true,
          variables: true,
      }))

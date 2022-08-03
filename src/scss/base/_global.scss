@@ -40,6 +40,8 @@
       border-radius: 8px;
    }
 }
+
+
 .pink {
    white-space: nowrap;
    padding: 2px 12px;
@@ -47,5 +49,12 @@
    background-color: var(--color_pink);
    @media (min-width: 992px) {
       padding: 4px 18px;
+   }
+}
+.pink--p {
+   padding: 2px 8px;
+   border-radius: 6px;
+   @media (min-width: 992px) {
+      border-radius: 8px;
    }
 }
