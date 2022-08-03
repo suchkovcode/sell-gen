@@ -20,7 +20,7 @@ const styles = () => {
       }))
       .pipe($.app.purgecss({
          content: ['./public/*.html', './public/js/**/.js'],
-         fontFace: true,
+         // fontFace: true,
          keyframes: true,
          variables: true,
      }))
