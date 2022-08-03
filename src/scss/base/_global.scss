@@ -1,0 +1,51 @@
+.container {
+   max-width: 1140px;
+   margin: 0 auto;
+
+   @media (min-width: 1400px) {
+      max-width: 1320px;
+   }
+}
+.main {
+   overflow-x: hidden;
+}
+
+.title-2 {
+   font: var(--font_title_2);
+}
+.title-3 {
+   font: var(--font_title_3);
+}
+.subtitle {
+   font: var(--font_subtitle);
+}
+
+.text-1 {
+   font: var(--font_text_1);
+}
+
+.blue {
+   white-space: nowrap;
+   padding: 2px 6px;
+   border-radius: 8px;
+   background-color: var(--color_blue);
+   @media (min-width: 992px) {
+      padding: 4px 9px;
+      border-radius: 18px;
+   }
+}
+.bleue--p {
+   border-radius: 6px;
+   @media (min-width: 992px) {
+      border-radius: 8px;
+   }
+}
+.pink {
+   white-space: nowrap;
+   padding: 2px 12px;
+   border-radius: 46px;
+   background-color: var(--color_pink);
+   @media (min-width: 992px) {
+      padding: 4px 18px;
+   }
+}
