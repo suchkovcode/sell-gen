@@ -103,6 +103,7 @@ body {
    min-width: 320px;
    height: 100%;
    scroll-behavior: smooth;
+   scrollbar-width: none;
 }
 b,
 strong {
@@ -113,4 +114,7 @@ u {
 }
 a {
    color: #333;
+}
+::-webkit-scrollbar {
+   display: none;
 }
