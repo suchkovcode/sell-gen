@@ -6,10 +6,10 @@
       padding: 120px 20px;
    }
    @media (min-width: 992px) {
-      padding: 140px 30px 180px 30px;
+      padding: 140px 50px 180px 50px;
    }
    @media (min-width: 1200px) {
-      padding: 160px 30px 160px 30px;
+      padding: 160px 50px 160px 50px;
    }
    &__grid-container {
       @media (min-width: 992px) {
@@ -42,9 +42,6 @@
       }
    }
    &__bullet-list {
-      display: flex;
-      flex-flow: column;
-      gap: 10px;
       max-width: 460px;
       margin: 0 auto;
       @media (min-width: 768px) {
@@ -54,11 +51,6 @@
          max-width: 100%;
          margin: 0;
       }
-   }
-   &__bullet-item {
-      display: flex;
-      gap: 10px;
-      font: var(--font_bullet);
    }
    &__bullet-item::before {
       content: url(../img/svg/section-3__bullet-icon.svg);
