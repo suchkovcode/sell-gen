@@ -91,6 +91,7 @@ html {
    -ms-text-size-adjust: 100%;
    -moz-text-size-adjust: 100%;
    -webkit-text-size-adjust: 100%;
+
    -webkit-overflow-scrolling: touch;
    -ms-touch-action: manipulation;
    touch-action: manipulation;
@@ -99,7 +100,7 @@ html {
 body {
    position: relative;
    font: 300 16px/1.5 'Inter';
-   color: #333;
+   color: #000;
    min-width: 320px;
    height: 100%;
    scroll-behavior: smooth;
