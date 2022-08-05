@@ -45,6 +45,28 @@
       font: 300 30px/1.45 "Inter";
    }
 }
+.marquee-3 {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+   padding: 8px 0px;
+   font: 300 24px/1.45 "Inter";
+   color: var(--color_primary);
+   white-space: nowrap;
+   animation: marq 210s infinite linear;
+
+   @media all and (min-width: 576px) {
+      font: 300 26px/1.45 "Inter";
+   }
+   @media all and (min-width: 992px) {
+      padding: 10px 0px;
+      font: 300 28px/1.45 "Inter";
+   }
+   @media all and (min-width: 1200px) {
+      padding: 12px 0px;
+      font: 300 30px/1.45 "Inter";
+   }
+}
 
 .elipse {
    display: inline-block;
