@@ -47,6 +47,7 @@
       &:hover > .section-14__offer-overlay {
          background-color: var(--color_primary);
       }
+    
       &:hover > .section-14__offer-text {
          color: var(--color_base);
       }
@@ -102,6 +103,12 @@
    &__offer-text {
       max-width: 200px;
       font: 300 18px/1.45 "Inter";
+      &:hover ~ .section-14__offer-overlay { 
+         background-color: var(--color_primary);
+      }
+      &:hover { 
+         color: var(--color_base);
+      }
       @media (min-width: 768px) {
          max-width: 100%;
          font: 300 20px/1.45 "Inter";
