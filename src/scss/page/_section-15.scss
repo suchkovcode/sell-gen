@@ -206,17 +206,25 @@
    &__img-title {
       text-align: center;
       padding: 15px;
+      font-size: 16px;
       @media (min-width: 576px) {
          padding: 20px;
+         font-size: 20px;
       }
       @media (min-width: 768px) {
          padding: 40px;
+         font-size: 22px;
       }
       @media (min-width: 992px) {
          padding: 80px 80px;
+         font-size: 26px;
+      }
+      @media (min-width: 1200px) {
+         font-size: 28px;
       }
       @media (min-width: 1400px) {
          padding: 100px 100px;
+         font-size: 30px;
       }
    }
 }
