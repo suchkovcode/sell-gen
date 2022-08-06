@@ -14,7 +14,7 @@ const path = {
       watch: {
          page: "./src/html/page/*.html",
          comp: "./src/html/components/*.html",
-      }
+      },
    },
    css: {
       src: "./src/scss/**/*.{scss,sass}",
@@ -23,7 +23,7 @@ const path = {
       watch: "./src/scss/**/*.{scss,sass}",
    },
    js: {
-      src: "./src/js/**/*",
+      src: ["./src/js/components/burger.js", "./src/js/components/animate.js"],
       dev: "./build/js/",
       pub: "./public/js/",
       watch: "./src/js/**/*",
@@ -80,6 +80,6 @@ const path = {
       src: "./public/**/*",
       pub: "./",
    },
-}
+};
 
 module.exports = path;
