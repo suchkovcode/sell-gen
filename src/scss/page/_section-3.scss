@@ -69,6 +69,7 @@
       }
       @media (min-width: 992px) {
          grid-area: separator;
+         max-width: 640px;
       }
    }
    &__bullet-separator {
