@@ -1,6 +1,4 @@
 .section-7 {
-   contain: layout paint;
-   content-visibility: auto;
    background-image: linear-gradient(to right, rgb(210, 230, 255, 0.2) 40%, rgb(255, 211, 226, 0.2) 100%);
 
    &__grid-container {
@@ -35,6 +33,7 @@
       }
    }
 
+
    &__bullet-box-1 {
       max-width: 460px;
       margin: 0 auto 30px auto;
@@ -59,8 +58,10 @@
    }
 
    &__bullet-title {
-      color: var(--color_base);
       margin-bottom: 20px;
+   }
+   &__mark {
+      color: var(--color_base);
    }
    &__bullet-item {
       color: var(--color_base);
