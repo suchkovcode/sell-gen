@@ -1,7 +1,7 @@
 {
-   "name": "english-bro",
+   "name": "sell-gen",
    "version": "1.0.0",
-   "description": "Авторская онлайн-школа разговорного английского для учебы, работы и путешествий",
+   "description": "We are 2 founders of a marketing agency. Experienced in more than 40 projects. We work closely with ecom. We attract leads from 0.5$. We provide сlicks at 0.02-0.1$. We have spent $447,000 advertising budget. Our average ROI 3.9x",
    "main": "gulpfile.js",
    "type": "commonjs",
    "scripts": {
@@ -9,7 +9,8 @@
       "build": "gulp",
       "public": "gulp pub",
       "wp": "gulp wp",
-      "zip": "gulp zip"
+      "zip": "gulp zip",
+      "server": "gulp server"
    },
    "browserslist": [
       "last 1 versions"
