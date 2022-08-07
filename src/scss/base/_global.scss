@@ -1,4 +1,3 @@
-
 .container {
    @media (min-width: 1200px) {
       max-width: 1140px;
@@ -11,7 +10,9 @@
 .main {
    overflow-x: hidden;
 }
-
+section {
+   contain: layout paint;
+}
 .title-1 {
    font: var(--font_title);
 }
@@ -28,7 +29,6 @@
    font: var(--font_text_1);
 }
 
-
 .bullet {
    display: flex;
    flex-flow: column;
@@ -40,57 +40,34 @@
    font: var(--font_bullet);
 }
 
-
+.mark {
+   position: relative;
+   white-space: nowrap;
+   padding: 0 6px;
+   z-index: 1;
+}
 .blue {
-   white-space: nowrap;
-   padding: 2px 6px;
-   border-radius: 8px;
+   position: absolute;
+   display: inline-block;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   width: 0;
+   height: 100%;
+   border-radius: 0.3em;
    background-color: var(--color_blue);
-   @media (min-width: 992px) {
-      padding: 4px 9px;
-      border-radius: 18px;
+   &-dark {
+      background-color: var(--color_blue_dark);
    }
 }
-.bleue--p {
-   border-radius: 6px;
-   @media (min-width: 992px) {
-      border-radius: 8px;
-   }
-}
-.blue-dark {
-   white-space: nowrap;
-   padding: 2px 6px;
-   border-radius: 8px;
-   background-color: var(--color_blue_dark);
-   @media (min-width: 992px) {
-      padding: 4px 9px;
-      border-radius: 18px;
-   }
-}
-.blue--space {
-   white-space: normal;
-   @media (min-width: 768px) {
-      white-space: nowrap;
-   }
-}
-
-
 .pink {
-   white-space: nowrap;
-   padding: 2px 12px;
-   border-radius: 46px;
+   position: absolute;
+   display: inline-block;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   width: 0;
+   height: 100%;
+   border-radius: 0.5em;
    background-color: var(--color_pink);
-   @media (min-width: 992px) {
-      padding: 4px 18px;
-   }
-}
-.pink--p {
-   padding: 2px 8px;
-   border-radius: 6px;
-   @media (min-width: 992px) {
-      border-radius: 8px;
-   }
-}
-.pink--space {
-   white-space: normal;
 }
