@@ -5,10 +5,10 @@ const styles = () => {
          message: "Error: <%= error.message %>",
          title: "Error running something"
       }))
-      .pipe($.app.autoprefixer()).on("error", $.app.notify.onError({
-         message: "Error: <%= error.message %>",
-         title: "Error running something"
-      }))
+      // .pipe($.app.autoprefixer()).on("error", $.app.notify.onError({
+      //    message: "Error: <%= error.message %>",
+      //    title: "Error running something"
+      // }))
       .pipe($.app.size({ title: "Размер до сжатия:", showFiles: false}))
       .pipe($.app.shorthand()).on("error", $.app.notify.onError({
          message: "Error: <%= error.message %>",
