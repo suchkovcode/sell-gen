@@ -1,4 +1,3 @@
-'use strict';
 const requireDir = require("require-dir");
 global.$ = {
    gulp:           require("gulp"),
@@ -7,40 +6,39 @@ global.$ = {
    path:           require("./src/gulp/config/path"),
    task:           requireDir("./src/gulp/tasks/", { recurse: true }),
    browserSync:    require("browser-sync").create(),
+   compiler:       require("webpack-stream"),
 };
 
 
 /* Запускает сборку без запуска сервера */
 exports.default =
    $.gulp.series(
-   $.task.clean.build,
-   $.task.transfer.img,
-   $.task.transfer.webp,
-   $.task.transfer.video,
-   $.task.transfer.fonts,
-   $.task.transfer.js,
-   $.task.transfer.vendorJs,
-   $.task.transfer.vendorCSS,
-   $.task.html,
-   $.task.styles,
-   $.task.transfer.admin,);
+   $.task.dev.clean.build,
+   $.task.dev.transfer.img,
+   $.task.dev.transfer.webp,
+   $.task.dev.transfer.video,
+   $.task.dev.transfer.fonts,
+   $.task.dev.transfer.js,
+   $.task.dev.transfer.vendorJs,
+   $.task.dev.html,
+   $.task.dev.styles,
+   $.task.dev.transfer.admin);
 
 
 /* Запускает сборку с запуском сервера */
 exports.dev =
    $.gulp.series(
-   $.task.clean.build,
-   $.task.transfer.img,
-   $.task.transfer.webp,
-   $.task.transfer.video,
-   $.task.transfer.fonts,
-   $.task.transfer.js,
-   $.task.transfer.vendorJs,
-   $.task.transfer.vendorCSS,
-   $.task.html,
-   $.task.styles,
-   $.task.transfer.admin,
-   $.task.server);
+   $.task.dev.clean.build,
+   $.task.dev.transfer.img,
+   $.task.dev.transfer.webp,
+   $.task.dev.transfer.video,
+   $.task.dev.transfer.fonts,
+   $.task.dev.transfer.js,
+   $.task.dev.transfer.vendorJs,
+   $.task.dev.html,
+   $.task.dev.styles,
+   $.task.dev.transfer.admin,
+   $.task.dev.server);
 
 /* Запускает продвкшен сборку */
 exports.pub =
@@ -52,12 +50,10 @@ exports.pub =
    $.task.pub.transfer.fonts,
    $.task.pub.transfer.js,
    $.task.pub.transfer.vendorJs,
-   $.task.pub.transfer.vendorCSS,
    $.task.pub.htmlInclude,
    $.task.pub.html,
    $.task.pub.styles,
-   $.task.pub.transfer.admin,
-   $.task.pub.sitemap);
+   $.task.pub.transfer.admin);
 
 exports.zip = $.task.pub.zip;
 exports.server = $.task.pub.server;
