@@ -76,7 +76,6 @@ const vendorJs = () => {
       )
       .pipe($.gulp.dest($.path.vendorJs.dev));
 };
-
 const video = () => {
    return $.gulp
       .src($.path.video.src)
