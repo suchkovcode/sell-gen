@@ -8,7 +8,8 @@
       "public": "gulp pub",
       "wp": "gulp wp",
       "zip": "gulp zip",
-      "server": "gulp server"
+      "server": "gulp server",
+      "check": "npx prettier --check ."
    },
    "browserslist": [
       "last 1 versions"
