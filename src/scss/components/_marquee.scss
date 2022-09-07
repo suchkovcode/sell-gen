@@ -1,69 +1,79 @@
 .marquee {
-   padding: 8px 0px;
-   font: 300 24px/1.45 "Inter";
+   padding: 8px 0;
    color: var(--color_primary);
+   font: 300 24px/1.45 "Inter";
    white-space: nowrap;
    animation: marq 220s infinite linear;
+
+   &::before {
+      content: "influencers + content + advertising + influencers + content + advertising +";
+   }
+
+   &::after {
+      content: "+ influencers + content + advertising + influencers + content + advertising";
+   }
 
    @media all and (min-width: 576px) {
       font: 300 26px/1.45 "Inter";
    }
+
    @media all and (min-width: 992px) {
-      padding: 10px 0px;
+      padding: 10px 0;
       font: 300 28px/1.45 "Inter";
    }
+
    @media all and (min-width: 1200px) {
-      padding: 12px 0px;
+      padding: 12px 0;
       font: 300 30px/1.45 "Inter";
    }
-   &::after {
-      content: "+ influencers + content + advertising + influencers + content + advertising";
-   }
-   &::before {
-      content: "influencers + content + advertising + influencers + content + advertising +";
-   }
 }
+
 .marquee-2 {
    display: flex;
-   align-items: center;
    gap: 15px;
-   padding: 8px 0px;
-   font: 300 24px/1.45 "Inter";
+   align-items: center;
+   padding: 8px 0;
    color: var(--color_primary);
+   font: 300 24px/1.45 "Inter";
    white-space: nowrap;
    animation: marq 170s infinite linear;
 
    @media all and (min-width: 576px) {
       font: 300 26px/1.45 "Inter";
    }
+
    @media all and (min-width: 992px) {
-      padding: 10px 0px;
+      padding: 10px 0;
       font: 300 28px/1.45 "Inter";
    }
+
    @media all and (min-width: 1200px) {
-      padding: 12px 0px;
+      padding: 12px 0;
       font: 300 30px/1.45 "Inter";
    }
 }
+
 .marquee-3 {
    display: flex;
-   align-items: center;
    gap: 15px;
-   padding: 8px 0px;
-   font: 300 24px/1.45 "Inter";
+   align-items: center;
+   padding: 8px 0;
    color: var(--color_primary);
+   font: 300 24px/1.45 "Inter";
    white-space: nowrap;
    animation: marq 210s infinite linear;
 
    @media all and (min-width: 576px) {
       font: 300 26px/1.45 "Inter";
    }
+
    @media all and (min-width: 992px) {
-      padding: 10px 0px;
+      padding: 10px 0;
       font: 300 28px/1.45 "Inter";
    }
+
    @media all and (min-width: 1200px) {
-      padding: 12px 0px;
+      padding: 12px 0;
       font: 300 30px/1.45 "Inter";
    }
 }
@@ -72,15 +82,16 @@
    display: inline-block;
    width: 6px;
    height: 6px;
-   border-radius: 50%;
    background-color: var(--color_primary);
+   border-radius: 50%;
 }
 
 @keyframes marq {
    0% {
       transform: translate(0.5%, 0);
    }
+
    100% {
-      transform: translate(-100%, 0)
+      transform: translate(-100%, 0);
    }
 }

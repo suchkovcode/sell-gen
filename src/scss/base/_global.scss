@@ -3,28 +3,36 @@
       max-width: 1140px;
       margin: 0 auto;
    }
+
    @media (min-width: 1400px) {
       max-width: 1320px;
    }
 }
+
 .main {
    overflow-x: hidden;
 }
+
 section {
    contain: layout paint;
 }
+
 .title-1 {
    font: var(--font_title);
 }
+
 .title-2 {
    font: var(--font_title_2);
 }
+
 .title-3 {
    font: var(--font_title_3);
 }
+
 .subtitle {
    font: var(--font_subtitle);
 }
+
 .text-1 {
    font: var(--font_text_1);
 }
@@ -34,6 +42,7 @@ section {
    flex-flow: column;
    gap: 10px;
 }
+
 .bullet-item {
    display: flex;
    gap: 10px;
@@ -42,32 +51,35 @@ section {
 
 .mark {
    position: relative;
-   white-space: nowrap;
-   padding: 0 6px;
    z-index: 1;
+   padding: 0 6px;
+   white-space: nowrap;
 }
+
 .blue {
    position: absolute;
-   display: inline-block;
    top: 0;
    left: 0;
    z-index: -1;
+   display: inline-block;
    width: 0;
    height: 100%;
-   border-radius: 0.3em;
    background-color: var(--color_blue);
+   border-radius: 0.3em;
+
    &-dark {
       background-color: var(--color_blue_dark);
    }
 }
+
 .pink {
    position: absolute;
-   display: inline-block;
    top: 0;
    left: 0;
    z-index: -1;
+   display: inline-block;
    width: 0;
    height: 100%;
-   border-radius: 0.5em;
    background-color: var(--color_pink);
+   border-radius: 0.5em;
 }

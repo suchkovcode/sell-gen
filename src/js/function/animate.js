@@ -1,7 +1,7 @@
 export const anumation = (() => {
    gsap.registerPlugin(ScrollTrigger);
    const tl = gsap.timeline();
-   
+
    const headerScroll = () => {
       if (screen.width > 992) {
          gsap.to(".header__overlay", {
@@ -192,7 +192,14 @@ export const anumation = (() => {
       });
       return tl;
    };
-   
-   tl.add(intro()).add(headerScroll()).add(about()).add(principles()).add(quote()).add(reasons()).add(familiar()).add(contact()).add(talk());
-})()
 
+   tl.add(intro())
+      .add(headerScroll())
+      .add(about())
+      .add(principles())
+      .add(quote())
+      .add(reasons())
+      .add(familiar())
+      .add(contact())
+      .add(talk());
+})();

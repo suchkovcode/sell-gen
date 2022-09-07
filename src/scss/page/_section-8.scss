@@ -1,67 +1,79 @@
 .section-8 {
-   overflow: hidden;
    position: relative;
    padding: 80px 20px;
-   background-image: linear-gradient(to right, rgb(210, 230, 255, 0.2) 40%, rgb(255, 211, 226, 0.2) 100%);
-   @media (min-width: 768px) {
-      padding: 100px 20px;
-   }
-   @media (min-width: 992px) {
-      padding: 180px 20px;
-   }
-   @media (min-width: 1200px) {
-      padding: 220px 0px;
-   }
+   overflow: hidden;
+   background-image: linear-gradient(to right, rgb(210 230 255 / 20%) 40%, rgb(255 211 226 / 20%) 100%);
+
    &__title {
       max-width: 460px;
+      margin: 0 auto 30px;
       text-align: center;
-      margin: 0 auto 30px auto;
+
       @media (min-width: 768px) {
          max-width: 560px;
       }
+
       @media (min-width: 992px) {
          max-width: 640px;
-         margin: 0 auto 50px auto;
+         margin: 0 auto 50px;
       }
    }
 
    &__bullet-list {
       max-width: 460px;
       margin: 0 auto;
+
       @media (min-width: 768px) {
          max-width: 560px;
       }
+
       @media (min-width: 992px) {
          max-width: 640px;
       }
    }
 
    &__bullet-item {
-      @media (min-width: 992px) {
-         font-size: 22px;
-      }
-      @media (min-width: 1200px) {
-         font-size: 24px;
-      }
       &::before {
-         content: " ";
          min-width: 20px;
          height: 20px;
          margin-top: 3px;
-         background-image: url(../img/svg/section-4__bullet-icon-2.svg);
+         background-image: url("../img/svg/section-4__bullet-icon-2.svg");
          background-repeat: no-repeat;
          background-size: cover;
+         content: " ";
+
          @media (min-width: 1400px) {
             min-width: 25px;
             height: 25px;
          }
       }
+
+      @media (min-width: 992px) {
+         font-size: 22px;
+      }
+
+      @media (min-width: 1200px) {
+         font-size: 24px;
+      }
    }
+
    &__bg {
       position: absolute;
       bottom: -200px;
       left: -200px;
       z-index: -1;
       opacity: 0.8;
+   }
+
+   @media (min-width: 768px) {
+      padding: 100px 20px;
+   }
+
+   @media (min-width: 992px) {
+      padding: 180px 20px;
+   }
+
+   @media (min-width: 1200px) {
+      padding: 220px 0;
    }
 }

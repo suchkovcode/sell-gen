@@ -1,5 +1,4 @@
 export const menu = (() => {
-   const header = document.querySelector(".header");
    const burger = document.querySelector(".header__toggler");
    const nav = document.querySelector(".header__nav-collaps");
    const overlay = document.querySelector("#overlay");
