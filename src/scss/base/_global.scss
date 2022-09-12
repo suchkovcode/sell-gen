@@ -45,8 +45,8 @@ section {
 
 .bullet-item {
    display: flex;
-   gap: 10px;
    font: var(--font_bullet);
+   gap: 10px;
 }
 
 .mark {
@@ -58,14 +58,14 @@ section {
 
 .blue {
    position: absolute;
-   top: 0;
    left: 0;
+   top: 0;
    z-index: -1;
    display: inline-block;
    width: 0;
    height: 100%;
-   background-color: var(--color_blue);
    border-radius: 0.3em;
+   background-color: var(--color_blue);
 
    &-dark {
       background-color: var(--color_blue_dark);
@@ -74,12 +74,12 @@ section {
 
 .pink {
    position: absolute;
-   top: 0;
    left: 0;
+   top: 0;
    z-index: -1;
    display: inline-block;
    width: 0;
    height: 100%;
-   background-color: var(--color_pink);
    border-radius: 0.5em;
+   background-color: var(--color_pink);
 }

@@ -2,8 +2,8 @@
    &__grid-container {
       position: relative;
       padding: 60px 20px;
-      background-color: var(--color_primary);
       border-radius: 28px;
+      background-color: var(--color_primary);
 
       @media (min-width: 992px) {
          padding: 80px 50px;
@@ -41,9 +41,9 @@
       position: relative;
       display: grid;
       grid-template-columns: 1fr;
-      gap: 20px;
       max-width: 460px;
       margin: 0 auto;
+      gap: 20px;
 
       @media (min-width: 768px) {
          grid-template-columns: 1fr 1fr;
@@ -57,25 +57,25 @@
 
       @media (min-width: 1200px) {
          grid-template-columns: 1fr 1fr 1fr;
-         gap: 30px;
          max-width: 100%;
          margin: 0;
+         gap: 30px;
       }
    }
 
    &__heath-1 {
       position: absolute;
-      top: 25%;
       left: -20px;
+      top: 25%;
 
       @media (min-width: 992px) {
          top: 10%;
       }
 
       @media (min-width: 1200px) {
-         top: -120px;
-         right: 80px;
          left: auto;
+         right: 80px;
+         top: -120px;
          width: 65px;
          height: auto;
       }
@@ -83,16 +83,16 @@
 
    &__heath-2 {
       position: absolute;
-      top: 45%;
       right: -20px;
+      top: 45%;
 
       @media (min-width: 768px) {
          right: -30px;
       }
 
       @media (min-width: 992px) {
-         top: 52%;
          right: 46%;
+         top: 52%;
          width: 65px;
          height: auto;
       }
@@ -104,17 +104,17 @@
 
    &__heath-3 {
       position: absolute;
-      top: 88%;
       left: -20px;
+      top: 88%;
 
       @media (min-width: 768px) {
          left: -35px;
       }
 
       @media (min-width: 992px) {
-         top: 92%;
-         right: 50px;
          left: auto;
+         right: 50px;
+         top: 92%;
          width: 95px;
          height: auto;
       }

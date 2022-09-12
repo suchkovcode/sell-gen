@@ -1,8 +1,8 @@
 .marquee {
    padding: 8px 0;
-   color: var(--color_primary);
    font: 300 24px/1.45 "Inter";
    white-space: nowrap;
+   color: var(--color_primary);
    animation: marq 220s infinite linear;
 
    &::before {
@@ -30,13 +30,13 @@
 
 .marquee-2 {
    display: flex;
-   gap: 15px;
    align-items: center;
    padding: 8px 0;
-   color: var(--color_primary);
    font: 300 24px/1.45 "Inter";
    white-space: nowrap;
+   color: var(--color_primary);
    animation: marq 170s infinite linear;
+   gap: 15px;
 
    @media all and (min-width: 576px) {
       font: 300 26px/1.45 "Inter";
@@ -55,13 +55,13 @@
 
 .marquee-3 {
    display: flex;
-   gap: 15px;
    align-items: center;
    padding: 8px 0;
-   color: var(--color_primary);
    font: 300 24px/1.45 "Inter";
    white-space: nowrap;
+   color: var(--color_primary);
    animation: marq 210s infinite linear;
+   gap: 15px;
 
    @media all and (min-width: 576px) {
       font: 300 26px/1.45 "Inter";
@@ -82,8 +82,8 @@
    display: inline-block;
    width: 6px;
    height: 6px;
-   background-color: var(--color_primary);
    border-radius: 50%;
+   background-color: var(--color_primary);
 }
 
 @keyframes marq {

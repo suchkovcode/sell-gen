@@ -9,8 +9,8 @@
 
    &__logo {
       min-width: 125px;
-      color: var(--color_primary);
       font: 300 26px/1.45 "Inter";
+      color: var(--color_primary);
 
       @media (min-width: 992px) {
          position: relative;
@@ -26,8 +26,8 @@
       width: 43px;
       height: 43px;
       padding: 9px;
-      background-color: var(--color_secondary);
       border-radius: 50%;
+      background-color: var(--color_secondary);
 
       @media (min-width: 992px) {
          display: none;
@@ -42,12 +42,12 @@
 
       &::before,
       &::after {
+         content: " ";
          display: block;
          width: 100%;
          height: 2px;
          background-color: var(--color_primary);
          transition: all 0.2s linear;
-         content: " ";
       }
 
       &::before {
@@ -64,28 +64,28 @@
 
       @media (min-width: 992px) {
          position: absolute;
-         top: 0;
          left: 0;
+         top: 0;
          z-index: 10;
          display: block;
          width: 100%;
          height: 100%;
+         opacity: 0;
          background-color: var(--color_base);
          box-shadow: rgb(0 0 0 / 0%) 0 1px 3px;
-         opacity: 0;
       }
    }
 
    &__overlay-open {
       position: fixed;
-      top: 0;
       left: 0;
+      top: 0;
       z-index: 10;
       display: block;
       width: 100vw;
       height: 100vh;
-      background-color: var(--color_primary);
       opacity: 0.3;
+      background-color: var(--color_primary);
 
       @media (min-width: 992px) {
          display: none;
@@ -94,15 +94,15 @@
 
    &__nav-collaps {
       position: fixed;
-      top: 0;
       right: -100%;
+      top: 0;
       z-index: 10;
       display: none;
       flex-flow: column;
-      gap: 100px;
       width: 80%;
       padding: 95px 30px 100%;
       background-color: var(--color_base);
+      gap: 100px;
 
       @media (min-width: 576px) {
          width: 65%;
@@ -114,14 +114,14 @@
 
       @media (min-width: 992px) {
          position: static;
-         top: 0;
          right: 0;
+         top: 0;
          display: flex;
          flex-flow: row;
-         gap: 0;
          width: 100%;
          padding: 0;
          background-color: transparent;
+         gap: 0;
       }
    }
 
@@ -137,16 +137,16 @@
 
       @media (min-width: 992px) {
          flex-flow: row;
-         gap: 30px;
          align-items: center;
          justify-content: center;
          width: 100%;
+         gap: 30px;
       }
    }
 
    &__nav-link {
-      color: var(--color_primary);
       font: 500 20px/1.45 "Inter";
+      color: var(--color_primary);
 
       &:hover {
          color: var(--color_hover);

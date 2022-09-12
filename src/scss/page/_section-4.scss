@@ -1,8 +1,8 @@
 .section-4 {
    &__grid-container {
       padding: 60px 20px;
-      background-color: var(--color_primary);
       border-radius: 28px;
+      background-color: var(--color_primary);
 
       @media (min-width: 768px) {
          padding: 80px 50px;
@@ -31,9 +31,9 @@
    &__box-container {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 20px;
       max-width: 460px;
       margin: 0 auto 50px;
+      gap: 20px;
 
       @media (min-width: 768px) {
          grid-template-columns: 1fr 1fr;
@@ -46,9 +46,9 @@
 
       @media (min-width: 1200px) {
          grid-template-columns: 1fr 1fr 1fr;
-         gap: 30px;
          max-width: 100%;
          margin: 0 0 70px;
+         gap: 30px;
       }
    }
 
@@ -62,9 +62,9 @@
 
       @media (min-width: 992px) {
          display: flex;
-         gap: 30px;
          justify-content: space-between;
          max-width: 940px;
+         gap: 30px;
       }
 
       @media (min-width: 1200px) {
@@ -100,8 +100,8 @@
 
    &__img-ps {
       position: absolute;
-      top: 0;
       left: 15px;
+      top: 0;
       z-index: 0;
 
       @media (min-width: 992px) {
@@ -147,9 +147,9 @@
 
       @media (min-width: 992px) {
          display: flex;
-         gap: 30px;
          align-items: center;
          max-width: 100%;
+         gap: 30px;
       }
 
       @media (min-width: 1200px) {
@@ -195,8 +195,8 @@
    &__bullet-list {
       display: flex;
       flex-flow: column;
-      gap: 10px;
       margin-bottom: 30px;
+      gap: 10px;
 
       @media (min-width: 992px) {
          max-width: 500px;
@@ -209,22 +209,22 @@
 
    &__bullet-item {
       display: flex;
-      gap: 10px;
       font: var(--font_bullet);
+      gap: 10px;
    }
 
    &__bullet-item::before {
-      min-width: 20px;
+      content: "";
       height: 20px;
+      min-width: 20px;
       margin-top: 3px;
       background-image: url("../img/svg/section-4__bullet-icon-2.svg");
-      background-repeat: no-repeat;
       background-size: cover;
-      content: "";
+      background-repeat: no-repeat;
 
       @media (min-width: 1200px) {
-         min-width: 25px;
          height: 25px;
+         min-width: 25px;
       }
    }
 

@@ -3,13 +3,13 @@
    align-items: center;
    justify-content: center;
    min-width: 170px;
-   max-width: 170px;
    min-height: 50px;
+   max-width: 170px;
    max-height: 50px;
-   color: var(--color_base);
    font: var(--font_btn);
-   background-color: var(--color_primary);
+   color: var(--color_base);
    border-radius: 55px;
+   background-color: var(--color_primary);
    transition: all 0.2s linear;
 
    &:hover {
@@ -23,8 +23,8 @@
 
    &--size {
       min-width: 260px;
-      max-width: 260px;
       min-height: 70px;
+      max-width: 260px;
       max-height: 70px;
    }
 }

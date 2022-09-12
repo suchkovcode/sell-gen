@@ -1,7 +1,7 @@
 .section-8 {
+   overflow: hidden;
    position: relative;
    padding: 80px 20px;
-   overflow: hidden;
    background-image: linear-gradient(to right, rgb(210 230 255 / 20%) 40%, rgb(255 211 226 / 20%) 100%);
 
    &__title {
@@ -34,17 +34,17 @@
 
    &__bullet-item {
       &::before {
-         min-width: 20px;
+         content: " ";
          height: 20px;
+         min-width: 20px;
          margin-top: 3px;
          background-image: url("../img/svg/section-4__bullet-icon-2.svg");
-         background-repeat: no-repeat;
          background-size: cover;
-         content: " ";
+         background-repeat: no-repeat;
 
          @media (min-width: 1400px) {
-            min-width: 25px;
             height: 25px;
+            min-width: 25px;
          }
       }
 
@@ -59,8 +59,8 @@
 
    &__bg {
       position: absolute;
-      bottom: -200px;
       left: -200px;
+      bottom: -200px;
       z-index: -1;
       opacity: 0.8;
    }

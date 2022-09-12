@@ -1,7 +1,7 @@
 .footer {
+   contain: layout paint;
    padding: 80px 20px;
    background-image: linear-gradient(to right, rgb(210 230 255 / 10%) 40%, rgb(255 211 226 / 10%) 100%);
-   contain: layout paint;
    content-visibility: auto;
 
    &__grid-container {
@@ -39,8 +39,8 @@
    &__social-box {
       display: flex;
       flex-flow: column;
-      gap: 15px;
       margin-bottom: 30px;
+      gap: 15px;
 
       @media (min-width: 576px) {
          margin-bottom: 50px;
@@ -58,8 +58,8 @@
 
    &__social-item {
       display: flex;
-      gap: 15px;
       align-items: center;
+      gap: 15px;
    }
 
    &__social-mesage {
@@ -107,9 +107,9 @@
       gap: 20px;
 
       @media (min-width: 992px) {
-         grid-area: img;
          align-self: end;
          justify-self: end;
+         grid-area: img;
          margin-bottom: 50px;
       }
 
@@ -150,8 +150,8 @@
 
    &__separator {
       position: absolute;
-      bottom: 30px;
       left: 5px;
+      bottom: 30px;
       z-index: -1;
       width: 100%;
       height: 1px;
@@ -183,14 +183,14 @@
       }
 
       @media (min-width: 992px) {
+         left: -170px;
          right: auto;
          bottom: -15px;
-         left: -170px;
       }
 
       @media (min-width: 1200px) {
-         bottom: 50px;
          left: -240px;
+         bottom: 50px;
          width: 180px;
       }
    }
