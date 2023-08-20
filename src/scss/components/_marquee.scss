@@ -1,0 +1,97 @@
+.marquee {
+   padding: 8px 0;
+   font: 300 24px/1.45 "Inter";
+   white-space: nowrap;
+   color: var(--color_primary);
+   animation: marq 220s infinite linear;
+
+   &::before {
+      content: "influencers + content + advertising + influencers + content + advertising +";
+   }
+
+   &::after {
+      content: "+ influencers + content + advertising + influencers + content + advertising";
+   }
+
+   @media all and (min-width: 576px) {
+      font: 300 26px/1.45 "Inter";
+   }
+
+   @media all and (min-width: 992px) {
+      padding: 10px 0;
+      font: 300 28px/1.45 "Inter";
+   }
+
+   @media all and (min-width: 1200px) {
+      padding: 12px 0;
+      font: 300 30px/1.45 "Inter";
+   }
+}
+
+.marquee-2 {
+   display: flex;
+   align-items: center;
+   padding: 8px 0;
+   font: 300 24px/1.45 "Inter";
+   white-space: nowrap;
+   color: var(--color_primary);
+   animation: marq 170s infinite linear;
+   gap: 15px;
+
+   @media all and (min-width: 576px) {
+      font: 300 26px/1.45 "Inter";
+   }
+
+   @media all and (min-width: 992px) {
+      padding: 10px 0;
+      font: 300 28px/1.45 "Inter";
+   }
+
+   @media all and (min-width: 1200px) {
+      padding: 12px 0;
+      font: 300 30px/1.45 "Inter";
+   }
+}
+
+.marquee-3 {
+   display: flex;
+   align-items: center;
+   padding: 8px 0;
+   font: 300 24px/1.45 "Inter";
+   white-space: nowrap;
+   color: var(--color_primary);
+   animation: marq 210s infinite linear;
+   gap: 15px;
+
+   @media all and (min-width: 576px) {
+      font: 300 26px/1.45 "Inter";
+   }
+
+   @media all and (min-width: 992px) {
+      padding: 10px 0;
+      font: 300 28px/1.45 "Inter";
+   }
+
+   @media all and (min-width: 1200px) {
+      padding: 12px 0;
+      font: 300 30px/1.45 "Inter";
+   }
+}
+
+.elipse {
+   display: inline-block;
+   width: 6px;
+   height: 6px;
+   border-radius: 50%;
+   background-color: var(--color_primary);
+}
+
+@keyframes marq {
+   0% {
+      transform: translate(0.5%, 0);
+   }
+
+   100% {
+      transform: translate(-100%, 0);
+   }
+}

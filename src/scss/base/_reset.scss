@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+details,
+summary,
+time,
+audio,
+video,
+button,
+mark {
+   margin: 0;
+   margin-block-start: 0;
+   margin-block-end: 0;
+   margin-inline-start: 0;
+   margin-inline-end: 0;
+   padding: 0;
+   font-size: 100%;
+   text-decoration: none;
+   border: 0;
+   list-style: none;
+   background-color: transparent;
+   vertical-align: baseline;
+   box-sizing: border-box;
+   padding-inline-start: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main,
+img {
+   display: block;
+}
+
+input {
+   appearance: none;
+   display: block;
+   margin: 0;
+   padding: 0;
+   font-weight: normal;
+   font-style: normal;
+   font-stretch: normal;
+   font-variant-caps: normal;
+   font-variant-east-asian: normal;
+   font-variant-ligatures: none;
+   font-variant-numeric: normal;
+   text-align: start;
+   text-indent: 0;
+   text-rendering: auto;
+   text-shadow: none;
+   text-transform: none;
+   line-height: normal;
+   letter-spacing: normal;
+   word-spacing: normal;
+   color: inherit;
+   border-width: 0;
+   border-color: transparent;
+   outline: none;
+}
+
+blockquote,
+q {
+   quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+   content: "";
+}
+
+::before,
+::after {
+   box-sizing: border-box;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+html {
+   overflow-x: hidden;
+   height: 100%;
+   font: 300 16px/1.5 "Inter";
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   text-size-adjust: 100%;
+   color: #333;
+   scroll-behavior: smooth;
+   touch-action: manipulation;
+   -webkit-overflow-scrolling: touch;
+}
+
+body {
+   position: relative;
+   height: 100%;
+   min-width: 320px;
+   font: 300 16px/1.5 "Inter";
+   color: #000;
+   scroll-behavior: smooth;
+   scrollbar-width: none;
+}
+
+b,
+strong {
+   font-weight: 700;
+}
+
+u {
+   text-decoration: underline;
+}
+
+a {
+   color: #333;
+}
+
+::-webkit-scrollbar {
+   display: none;
+}

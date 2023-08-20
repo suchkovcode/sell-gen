@@ -1,0 +1,144 @@
+.section-12 {
+   padding: 80px 20px;
+
+   &__title {
+      max-width: 460px;
+      margin: 0 auto 30px;
+
+      @media (min-width: 768px) {
+         max-width: 640px;
+      }
+
+      @media (min-width: 992px) {
+         max-width: 960px;
+         margin: 0 auto 30px 0;
+         padding: 0 50px;
+      }
+
+      @media (min-width: 1200px) {
+         margin: 0 auto 50px 0;
+         padding: 0 50px;
+      }
+   }
+
+   &__img-box {
+      display: flex;
+      flex-flow: column;
+      max-width: 460px;
+      margin: 0 auto 50px;
+      gap: 20px;
+
+      @media (min-width: 768px) {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         max-width: 960px;
+      }
+
+      @media (min-width: 992px) {
+         grid-template-areas: "img_2 img_1 img_3";
+         grid-template-columns: 1fr 1fr 1fr;
+         margin: 0 auto;
+      }
+
+      @media (min-width: 1200px) {
+         max-width: 100%;
+         padding: 0 50px;
+      }
+   }
+
+   &__img-1 {
+      width: 100%;
+      height: auto;
+
+      @media (min-width: 992px) {
+         grid-area: img_1;
+      }
+   }
+
+   &__img-2 {
+      width: 105%;
+      height: auto;
+
+      @media (min-width: 992px) {
+         grid-area: img_2;
+      }
+
+      @media (min-width: 1400px) {
+         width: 109%;
+      }
+   }
+
+   &__img-3 {
+      width: 100%;
+      height: auto;
+
+      @media (min-width: 768px) {
+         margin-top: -70px;
+      }
+
+      @media (min-width: 992px) {
+         grid-area: img_3;
+         margin-top: 0;
+      }
+   }
+
+   &__btn-box {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      max-width: 460px;
+      margin: 0 auto;
+      gap: 20px;
+
+      @media (min-width: 768px) {
+         max-width: 560px;
+      }
+
+      @media (min-width: 992px) {
+         flex-flow: row;
+         align-items: center;
+         justify-content: flex-end;
+         max-width: 960px;
+         margin: -50px auto 0;
+      }
+
+      @media (min-width: 1200px) {
+         max-width: 100%;
+         padding: 0 50px;
+      }
+   }
+
+   &__text {
+      font: 300 22px/1.45 "Inter";
+
+      @media (min-width: 992px) {
+         font: 300 24px/1.45 "Inter";
+      }
+
+      @media (min-width: 1200px) {
+         font: 300 26px/1.45 "Inter";
+      }
+
+      @media (min-width: 1400px) {
+         font: 300 28px/1.45 "Inter";
+      }
+   }
+
+   &__btn {
+      min-width: 200px;
+      min-height: 70px;
+      max-height: 70px;
+   }
+
+   @media (min-width: 992px) {
+      padding: 100px 0;
+   }
+
+   @media (min-width: 1200px) {
+      padding: 120px 0;
+   }
+
+   @media (min-width: 1400px) {
+      padding: 140px 0;
+   }
+}

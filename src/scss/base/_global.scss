@@ -1,0 +1,85 @@
+.container {
+   @media (min-width: 1200px) {
+      max-width: 1140px;
+      margin: 0 auto;
+   }
+
+   @media (min-width: 1400px) {
+      max-width: 1320px;
+   }
+}
+
+.main {
+   overflow-x: hidden;
+}
+
+section {
+   contain: layout paint;
+}
+
+.title-1 {
+   font: var(--font_title);
+}
+
+.title-2 {
+   font: var(--font_title_2);
+}
+
+.title-3 {
+   font: var(--font_title_3);
+}
+
+.subtitle {
+   font: var(--font_subtitle);
+}
+
+.text-1 {
+   font: var(--font_text_1);
+}
+
+.bullet {
+   display: flex;
+   flex-flow: column;
+   gap: 10px;
+}
+
+.bullet-item {
+   display: flex;
+   font: var(--font_bullet);
+   gap: 10px;
+}
+
+.mark {
+   position: relative;
+   z-index: 1;
+   padding: 0 6px;
+   white-space: nowrap;
+}
+
+.blue {
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: -1;
+   display: inline-block;
+   width: 0;
+   height: 100%;
+   border-radius: 0.3em;
+   background-color: var(--color_blue);
+
+   &-dark {
+      background-color: var(--color_blue_dark);
+   }
+}
+
+.pink {
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: -1;
+   display: inline-block;
+   width: 0;
+   height: 100%;
+   border-radius: 0.5em;
+   background-color: var(--color_pink);
+}
