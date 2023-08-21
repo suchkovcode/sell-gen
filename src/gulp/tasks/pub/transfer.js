@@ -50,27 +50,7 @@ const js = () => {
       )
       .pipe($.gulp.dest($.path.js.pub));
 };
-const vendorJs = () => {
-   return $.gulp
-      .src($.path.vendorJs.src)
-      .on(
-         "error",
-         $.app.notify.onError({
-            message: "Error: <%= error.message %>",
-            title: "Error running something",
-         })
-      )
-      .pipe(
-         $.compiler({
-            mode: "production",
-            cache: false,
-            output: {
-               filename: "vendor.min.js",
-            },
-         })
-      )
-      .pipe($.gulp.dest($.path.vendorJs.pub));
-};
+
 const video = () => {
    return $.gulp
       .src($.path.video.src)
