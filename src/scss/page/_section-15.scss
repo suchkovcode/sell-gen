@@ -55,10 +55,6 @@
    &__subtitle {
       margin-bottom: 30px;
       text-align: center;
-
-      @media (min-width: 992px) {
-         margin-bottom: 0;
-      }
    }
 
    &__bullet-item::before {
