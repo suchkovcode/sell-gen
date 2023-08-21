@@ -1,3 +1,4 @@
+// @ts-nocheck
 const img = () => {
    return $.gulp
       .src($.path.img.src)
