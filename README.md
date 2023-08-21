@@ -16,3 +16,4 @@
 **Gtmetrix**
 
  <img src="./src/img/md/GTmetrix.png" alt="Картинка">
+ <img src="./src/img/md/w3w.png" alt="Картинка">
