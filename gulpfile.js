@@ -18,7 +18,6 @@ exports.default = $.gulp.series(
    $.task.dev.transfer.video,
    $.task.dev.transfer.fonts,
    $.task.dev.transfer.js,
-   $.task.dev.transfer.vendorJs,
    $.task.dev.html,
    $.task.dev.styles,
    $.task.dev.transfer.admin
@@ -32,7 +31,6 @@ exports.dev = $.gulp.series(
    $.task.dev.transfer.video,
    $.task.dev.transfer.fonts,
    $.task.dev.transfer.js,
-   $.task.dev.transfer.vendorJs,
    $.task.dev.html,
    $.task.dev.styles,
    $.task.dev.transfer.admin,
