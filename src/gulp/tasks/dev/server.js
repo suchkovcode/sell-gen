@@ -1,3 +1,4 @@
+// @ts-nocheck
 const server = () => {
    $.browserSync.init({
       server: "./build",

@@ -1,3 +1,4 @@
+// @ts-nocheck
 const admin = () => {
    return $.gulp
       .src($.path.admin.src)
