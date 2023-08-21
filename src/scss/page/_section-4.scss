@@ -209,6 +209,7 @@
 
    &__bullet-item {
       display: flex;
+      justify-items: center;
       font: var(--font_bullet);
       gap: 10px;
 
