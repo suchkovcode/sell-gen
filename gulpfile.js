@@ -45,7 +45,6 @@ exports.pub = $.gulp.series(
    $.task.pub.transfer.video,
    $.task.pub.transfer.fonts,
    $.task.pub.transfer.js,
-   $.task.pub.transfer.vendorJs,
    $.task.pub.htmlInclude,
    $.task.pub.html,
    $.task.pub.styles,
