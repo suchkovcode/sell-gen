@@ -77,11 +77,8 @@
    &__bullet-item {
       color: var(--color_base);
 
-      &::before {
-         content: url("../img/svg/section-7__bullet-icon-3.svg");
-         width: 20px;
-         height: 20px;
-         margin-top: 3px;
+      & svg {
+         min-width: 20px;
       }
    }
 

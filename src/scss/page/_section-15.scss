@@ -57,17 +57,8 @@
       text-align: center;
    }
 
-   &__bullet-item::before {
-      content: " ";
-      height: 20px;
-      min-width: 20px;
-      margin-top: 3px;
-      background-image: url("../img/svg/section-15__bullet-icon-3.svg");
-      background-size: cover;
-      background-repeat: no-repeat;
-
-      @media (min-width: 1200px) {
-         height: 25px;
+   &__bullet-item {
+      & svg {
          min-width: 25px;
       }
    }

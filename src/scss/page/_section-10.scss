@@ -57,15 +57,8 @@
    }
 
    &__bullet-item {
-      &::before {
-         content: url("../img/svg/section-3__bullet-icon.svg");
-         width: 20px;
-         height: 20px;
-         margin-top: 3px;
-
-         @media (min-width: 1400px) {
-            margin-top: 0;
-         }
+      & svg {
+         min-width: 20px;
       }
 
       @media (min-width: 768px) {

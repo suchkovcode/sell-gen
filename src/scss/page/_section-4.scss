@@ -211,22 +211,12 @@
       display: flex;
       font: var(--font_bullet);
       gap: 10px;
-   }
 
-   &__bullet-item::before {
-      content: "";
-      height: 20px;
-      min-width: 20px;
-      margin-top: 3px;
-      background-image: url("../img/svg/section-4__bullet-icon-2.svg");
-      background-size: cover;
-      background-repeat: no-repeat;
-
-      @media (min-width: 1200px) {
-         height: 25px;
+      & svg {
          min-width: 25px;
       }
    }
+
 
    &__img-fb {
       width: 100%;

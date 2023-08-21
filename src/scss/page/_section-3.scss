@@ -49,17 +49,6 @@
       }
    }
 
-   &__bullet-item::before {
-      content: url("../img/svg/section-3__bullet-icon.svg");
-      width: 20px;
-      height: 20px;
-      margin-top: 3px;
-
-      @media (min-width: 1400px) {
-         margin-top: 0;
-      }
-   }
-
    &__bullet-separator-box {
       max-width: 460px;
       margin: 30px auto;

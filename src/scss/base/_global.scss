@@ -45,6 +45,7 @@ section {
 
 .bullet-item {
    display: flex;
+   align-items: center;
    font: var(--font_bullet);
    gap: 10px;
 }
