@@ -10,7 +10,7 @@ const img = () => {
          })
       )
       .pipe($.app.size({ title: "Размер до сжатия:" }))
-      .pipe($.app.imagemin({ verbose: true }))
+      // .pipe($.app.imagemin({ verbose: true }))
       .pipe($.app.size({ title: "Размер после сжатия:" }))
       .pipe($.gulp.dest($.path.img.pub));
 };
