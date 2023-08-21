@@ -77,7 +77,6 @@ module.exports = {
    img: img,
    fonts: fonts,
    js: js,
-   vendorJs: vendorJs,
    video: video,
    webp: webp,
    admin: admin,
