@@ -34,7 +34,11 @@
 
    &__bullet-item {
       justify-items: flex-start;
-      
+
+      & svg {
+         min-width: 25px;
+      }
+
       @media (min-width: 992px) {
          font-size: 22px;
       }
