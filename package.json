@@ -1,12 +1,12 @@
 {
-   "name": "example",
+   "name": "sell-gen",
    "version": "1.0.0",
-   "description": "example",
+   "description": "Created an adaptive cross-browser website with animations for an international digital agency and internet marketing that helps increase sales of brands in the merchandise commerce",
    "author": "Nikita Suchkov",
    "license": "MIT",
    "browserslist": "> 0.5%, last 3 versions, not dead",
-   "repository": "",
-   "homepage": "",
+   "repository": "https://github.com/suchkovcode/sell-gen",
+   "homepage": "sell-gen.suchkov.cc/",
    "private": true,
    "scripts": {
       "start": "gulp",
