@@ -1,3 +1,7 @@
+// @ts-nocheck
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
 export const anumation = (() => {
    gsap.registerPlugin(ScrollTrigger);
    const tl = gsap.timeline();
