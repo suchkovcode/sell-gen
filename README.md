@@ -1,6 +1,9 @@
 # Website speed and performance
-   **Google page speed**
    <table>
+        <tr>
+         <td><b>Google page speed - mob</b></td>
+         <td><b>Google page speed - des</b></td>
+      </tr>
       <tr>
          <td>
             <img src="./src/img/md/pagespeed_mob.png" alt="Картинка мобильного" title="Картинка" />
