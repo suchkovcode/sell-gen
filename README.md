@@ -1,8 +1,8 @@
 # Website speed and performance
    <table>
         <tr>
-         <td><b>Google page speed - mob</b></td>
-         <td><b>Google page speed - des</b></td>
+         <td><b>Google Page Speed - mob</b></td>
+         <td><b>Google Page Speed - des</b></td>
       </tr>
       <tr>
          <td>
